@@ -1,0 +1,72 @@
+/* Allgemeines Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #1e1e2e; /* Dunkles Lila für den Hintergrund */
+  color: #ffffff; /* Weißer Text */
+}
+
+h1 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+/* Hintergrund-Logo */
+.background-logo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('logo+lila.png') no-repeat center center;
+  background-size: cover;
+  opacity: 0.2; /* Transparenz */
+  z-index: -1; /* Im Hintergrund */
+}
+
+/* Kopfbereich */
+header {
+  background-color: #333;
+  text-align: center;
+  padding: 20px 0;
+}
+
+header h1 {
+  color: #fff;
+  font-size: 3em;
+}
+
+/* Inhaltsbereich */
+main {
+  padding: 20px;
+}
+
+.content-box {
+  background-color: rgba(0, 0, 0, 0.7); /* Dunkler Hintergrund mit Transparenz */
+  padding: 20px;
+  margin: 20px 0;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Erfolge-Bereich */
+.achievements img {
+  display: block;
+  margin: 20px auto;
+  max-width: 80%;
+  border: 3px solid #f08bfc; /* Lila Rand */
+  border-radius: 10px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+}
