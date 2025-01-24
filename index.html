@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GHT E-Sports</title>
+  <style>
+    /* Hintergrundbild */
+    .background-logo {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('logo+lila.png') center/cover no-repeat;
+      opacity: 0.15; /* Dunkler Hintergrund */
+      z-index: -1;
+    }
+
+    /* Allgemeiner Stil */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #eee; /* Heller Text */
+      background-color: #222; /* Dunkler Hintergrund */
+    }
+
+    /* Header-Stil mit weißen Linien und Links */
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 40px 20px 30px; /* Vergrößertes Padding */
+      text-align: center;
+      position: relative;
+      border-top: 4px solid #fff; /* Weiße Linie oben */
+      border-bottom: 4px solid #fff; /* Weiße Linie unten */
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 32px; /* Schriftgröße leicht erhöht */
+      font-weight: bold;
+    }
+
+    /* Links für "Sponsoren" statt "SHOP" */
+    .header-links {
+      position: absolute;
+      top: 50%; /* Auf gleicher Ebene wie der "GHT E-Sports"-Text */
+      left: 40px; /* Verschiebung nach links */
+      right: 40px; /* Verschiebung nach rechts */
+      display: flex;
+      justify-content: space-between;
+      transform: translateY(-50%); /* Vertikale Zentrierung */
+    }
+
+    .header-links a {
+      color: #fff; /* Gleiche Farbe wie der Header-Text */
+      text-decoration: none; /* Keine Unterstreichung */
+      font-size: 18px;
+      font-weight: bold;
+      padding: 10px 20px;
+    }
+
+    .header-links a:hover {
+      background-color: #444;
+      border-radius: 5px;
+    }
+
+    /* Inhalt */
+    .content-box {
+      padding: 20px;
+      max-width: 800px;
+      margin: 20px auto;
+      line-height: 1.8;
+      color: #ddd; /* Dezent hellerer Text */
+    }
+
+    /* Bildcontainer */
+    .image-row {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .image-row img {
+      width: 200px;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      margin-top: 20px;
+      background: #333;
+      color: white;
+    }
+
+    footer a {
+      color: #1e90ff;
+      text-decoration: none;
+    }
+
+    /* Responsive Styles */
+
+    /* Für kleinere Bildschirmgrößen (Handy) */
+    @media only screen and (max-width: 768px) {
+      header {
+        padding: 20px 10px; /* Reduziertes Padding */
+      }
+
+      header h1 {
+        font-size: 24px; /* Kleinere Schriftgröße für den Header */
+      }
+
+      .header-links {
+        flex-direction: column; /* Die Links untereinander anordnen */
+        justify-content: center;
+        gap: 10px; /* Abstand zwischen den Links */
+      }
+
+      .content-box {
+        padding: 15px;
+        margin: 10px; /* Weniger Abstand */
+      }
+
+      .image-row {
+        flex-direction: column; /* Bilder untereinander statt nebeneinander */
+        gap: 10px;
+      }
+
+      .image-row img {
+        width: 100%; /* Bilder auf 100% der Breite setzen */
+        height: auto;
+      }
+
+      footer {
+        font-size: 14px; /* Kleinere Schrift im Footer */
+      }
+    }
+
+    /* Für noch kleinere Bildschirme (z. B. Smartphones) */
+    @media only screen and (max-width: 480px) {
+      header h1 {
+        font-size: 20px; /* Sehr kleine Schriftgröße */
+      }
+
+      .header-links a {
+        font-size: 16px; /* Kleinere Schriftgröße für Links */
+        padding: 8px 16px;
+      }
+
+      .content-box {
+        padding: 10px;
+      }
+
+      footer {
+        font-size: 12px; /* Sehr kleine Schrift im Footer */
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Hintergrund-Logo -->
+  <div class="background-logo"></div>
+
+  <!-- Kopfbereich -->
+  <header>
+    <!-- Links für "Sponsoren" statt "SHOP" -->
+    <div class="header-links">
+      <a href="https://tim23455.github.io/Shop/">SHOP</a>
+     
+      <a href="#sponsoren">Sponsoren</a> <!-- Hier ist der Link zu "Sponsoren" -->
+    </div>
+    <!-- GHT E-Sports Link -->
+    <a href="https://tim23455.github.io/GHT/" target="_blank">
+      <h1>GHT E-Sports</h1>
+    </a>
+  </header>
+
+  <!-- Inhalt -->
+  <main>
+    <!-- Erste Textbox -->
+    <section class="content-box">
+      <p>
+        GHT E-Sports ist nicht einfach nur ein Team – es ist eine Vision. Eine Gemeinschaft, die es sich zum Ziel gemacht hat, 
+        nicht nur im Gaming erfolgreich zu sein, sondern auch eine Plattform zu bieten, auf der Spieler aus der ganzen Welt 
+        zusammenkommen, um ihre Leidenschaft für Videospiele zu teilen. Mit regelmäßigen Turnierteilnahmen beweisen wir immer 
+        wieder, dass harte Arbeit, Training und eine starke Gemeinschaft der Schlüssel zum Erfolg sind. Unsere Events, wie 
+        spannende Giveaways und intensiven Cups, sorgen dafür, dass unsere Mitglieder und die Community stets motiviert und 
+        begeistert bleiben.
+      </p>
+    </section>
+
+    <!-- Zweite Textbox -->
+    <section class="content-box">
+      <p>
+        Unsere Mitglieder sind Experten in verschiedensten Genres, und wir vertreten eine Vielzahl von Spielen. Ob in 
+        actiongeladenen Schießereien in <strong>Valorant</strong>, wo Präzision und Teamwork gefragt sind, oder in kreativen 
+        Bauprojekten und rasanten Kämpfen in <strong>Fortnite</strong>, bei uns steht die Vielfalt an erster Stelle. 
+        Strategisches Denken ist unser Motto, besonders in <strong>Clash Royale</strong>, wo jede Entscheidung den Unterschied 
+        zwischen Sieg und Niederlage ausmachen kann. Zusammen arbeiten wir daran, uns ständig zu verbessern, unsere Taktiken zu 
+        verfeinern und immer wieder neue Ziele zu setzen.
+      </p>
+    </section>
+
+    <!-- Erfolge-Bereich mit 3 Bildern -->
+    <section class="achievements">
+      <div class="image-row">
+        <img src="winner.png" alt="Gewonnenes Spiel">
+        <img src="a.png" alt="Bild A">
+        <img src="b.png" alt="Bild B">
+      </div>
+    </section>
+
+    <!-- Dritte Textbox -->
+    <section class="content-box">
+      <p>
+        Doch GHT E-Sports ist mehr als nur Gaming. Wir schaffen eine Umgebung, in der sich jeder willkommen fühlt, egal ob 
+        Anfänger oder Profi. Hier geht es nicht nur darum, besser zu werden – es geht darum, gemeinsam zu wachsen. Unser Team 
+        unterstützt sich gegenseitig, teilt Tipps und Tricks und sorgt dafür, dass jeder die Möglichkeit hat, sein volles 
+        Potenzial zu entfalten. Freundschaften werden geknüpft, Strategien werden geplant, und Erinnerungen werden geschaffen, 
+        die ein Leben lang halten.
+      </p>
+    </section>
+
+    <!-- Vierte Textbox -->
+    <section class="content-box">
+      <p>
+        Wir bei GHT E-Sports glauben daran, dass Gaming mehr als nur ein Hobby ist – es ist eine Kunstform, eine Disziplin und 
+        eine Möglichkeit, Menschen miteinander zu verbinden. Mit jedem Turnier, jedem Event und jedem Training bringen wir 
+        unsere Leidenschaft auf das nächste Level. Unser Ziel ist es, eine Gemeinschaft aufzubauen, die nicht nur im Spiel, 
+        sondern auch im echten Leben zusammenhält. Gemeinsam sind wir stark, und gemeinsam erreichen wir Großes!
+      </p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 GHT E-Sports. Alle Rechte vorbehalten.</p>
+    <p>
+      Tritt unserem Discord-Server bei: <a href="https://discord.gg/JJmuyNDqUe" target="_blank">Hier klicken</a>
+    </p>
+    <p>
+      Folge unserem YouTube-Kanal: <a href="https://www.youtube.com/@justin_zockt2270" target="_blank">Justin Zockt</a>
+    </p>
+  </footer>
+</body>
+</html>
